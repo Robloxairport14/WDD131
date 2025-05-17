@@ -1,20 +1,14 @@
-// document.querySelector("L").addEventListener("change", function() {
-//     alert("Light" + this.value);
-// });
-
-const themeSelector = html// replace with code to select dropdown element out of the HTML (Hint: document.querySelector)
+const themeSelector = document.querySelector("select")
+const logo= document.querySelector("img")
 function changeTheme() {
-// check to see what the current value of our select is.
-// The current value is conveniently found in themeSelector.value!
-
-// if the value is dark then:
-// add the dark class to the body
-// change the source of the logo img to point to the white logo.
-// otherwise
-// remove the dark class
-// make sure the logo src is the blue logo.
+const value = themeSelector.value
+if (value === "Dark") {
+document.body.classList.add("dark") 
+logo.src = "DarkBYU-Idaho-Logo-Box.svg"
 }
-
-// add an event listener to the themeSelector element here.
-// Use the changeTheme function as the event handler function.
+else {
+    document.body.classList.remove("dark");
+    logo.src = "logo.webp"
+}
+}
 themeSelector.addEventListener('change', changeTheme);

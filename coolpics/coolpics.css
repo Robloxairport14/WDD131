@@ -10,7 +10,7 @@
  --primary-font: Arial, Helvetica,sans-serif;
  --secondary-font: "Mooli", san-serif;
 }
-
+/* this is 3 columns */
 body {
     font-family: var(--primary-font);
     font-size: 1.2em;
@@ -21,11 +21,11 @@ body {
   }
   img {
 	max-width: 100%;
-    width: 2px;
+    width: 300px;
 }
 div#cw{
-    /* font-family: var(--secondary-font); */
-    font-size: 1000px;
+    font-family: var(--secondary-font);
+    font-size: 100px;
 }
 header {
     background-color: var(--primary-color);
@@ -41,3 +41,15 @@ footer {
     text-align: center;
     font-family: var(--secondary-font);
 }
+@media screen and (max-width: 700px) { /*changing to 1 column for photo galary */
+    body {
+        font-size: 1.5em;
+    }
+    header {
+        font-size: 1.5em;
+    }
+    footer {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 1000px) /*changing to 2 columns for photo galary */
