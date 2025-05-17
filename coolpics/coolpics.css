@@ -52,4 +52,4 @@ footer {
         font-size: 1.5em;
     }
 }
-/* @media screen and (max-width: 1000px){} changing to 2 columns for photo galary */
+@media screen and (max-width: 1000px){} /*changing to 2 columns for photo galary */
